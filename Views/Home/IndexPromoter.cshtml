@@ -1,0 +1,29 @@
+
+<div class="text-center border-bottom">
+    <h1 class="display-4">Welcome</h1>
+</div>
+
+<a asp-action="ProductAdd" class="b btn btn-primary">Add a Product</a>
+<a href="/logout" class="b  btn btn-danger">Logout</a>
+
+<table class="b table table-striped">
+            <thead>
+                <tr>
+                <th>Name of Product</th>
+                <th>Description</th>               
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in @ViewBag.ProductsList)
+                {
+                    <tr>
+                        <td>
+                          <a asp-action="ShowProduct" asp-controller="Home" asp-route-id="@item.ProductId">  @item.NameOfProduct </a>  
+                        </td>
+                        <td>
+                           @item.Description
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>

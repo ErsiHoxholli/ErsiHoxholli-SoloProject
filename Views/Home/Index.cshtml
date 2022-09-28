@@ -1,0 +1,90 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="backg">
+<div class="b text-center ">
+    <h1 class="display-4">BETA LOTTERY</h1>
+    <h5>Welcome to the new Lottery that might change your life!</h5>
+</div>
+<div class="a text-center ">
+  <h6>THREE EASY STEPS TO PARTICIPATE:</h6>
+  
+  <div class="row">
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Register or Login</h5>
+        <p class="card-text">Create an account for free. You can Register and Login your account by entering your Personal Details that are required.</p>
+        <a asp-action="ClientRegister" asp-controller="Home" class="btn btn-primary">Continue</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Chose a Product</h5>
+        <p class="card-text">You can choose from the variety of products that you will find displayed in the feed every day. Every update will be displayed in your account.</p>
+        <a asp-action="ClientRegister" asp-controller="Home" class="btn btn-primary">Continue</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Participate with 1$</h5>
+        <p class="card-text">You can be part of the draw for a certain product starting with only $1. Different products will have different costs based on their monetary value</p>
+        <a asp-action="ClientRegister" asp-controller="Home" class="btn btn-primary">Continue</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="a text-center ">
+  <h6>WHAT WE OFFER TO OUR CLIENTS:</h6>
+  
+  <div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Cars & Appartments</h5>
+        <p class="card-text">In this lottery, you can be part of the lottery to win car or apartment products. Each product will be accompanied by the corresponding photos and a detailed description about the product. Several Promoters will upload a variety of the above products and you can become a winner starting from only $1. The choosen one might be YOU so do not miss a chance this easy! Good Luck!</p> 
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">One to Three Year Gift-Cards</h5>
+        <p class="card-text">In this lottery, you can also be part of the lottery to win One to Three Year Gift-Cards of several Companies. Each Gift-Card will be accompanied by the corresponding detailed description. Several Promoters will upload a variety of the above Gift-Cards and you can become a winner of them starting from only $1. The choosen one might be YOU so do not miss a chance this easy! Good Luck!</p>  
+      </div>
+    </div>
+  </div>
+  @* <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Participate with 1$</h5>
+        <p class="card-text">You can be part of the draw for a certain product starting with only $1. Different products will have different costs based on their monetary value</p>
+        <a asp-action="ClientRegister" asp-controller="Home" class="btn btn-primary">Continue</a>
+      </div>
+    </div>
+  </div> *@
+</div>
+</div>
+
+
+<div class="c text-center">
+@* <button type="submit" class="e btn btn-outline-primary">Continue as Promoter</button> *@<a asp-action="PromoterRegister" asp-controller="Home"  class="btn btn-primary">Continue as Promoter</a>
+@* <button type="submit" class="btn btn-outline-primary">Continue as Client</button> *@<a asp-action="ClientRegister" asp-controller="Home" class="btn btn-primary">Continue as Client</a>
+</div>
+<div class="d text-center">
+</div>
+
+<div class="z text-center border-bottom ">
+  <p style="font-size: 12px;">Players Must Be 18 Years or Older.
+    <br>
+      Players must be located within Albania for online play.
+    <br>
+      Please Play Responsibly.</p>
+</div>
+</div>
